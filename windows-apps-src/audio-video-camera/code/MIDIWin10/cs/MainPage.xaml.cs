@@ -63,9 +63,10 @@ namespace MIDIWin10
             // Else, add each connected input device to the list
             foreach (DeviceInformation deviceInfo in midiInputDevices)
             {
-                this.midiInPortListBox.Items.Add(deviceInfo.Name);
-                this.midiInPortListBox.IsEnabled = true;
+                this.midiInPortListBox.Items.Add(deviceInfo.Name);                
             }
+            
+            this.midiInPortListBox.IsEnabled = true;
         }
         // </SnippetEnumerateMidiInputDevices>
 
@@ -90,9 +91,10 @@ namespace MIDIWin10
             // Else, add each connected input device to the list
             foreach (DeviceInformation deviceInfo in midiOutputDevices)
             {
-                this.midiOutPortListBox.Items.Add(deviceInfo.Name);
-                this.midiOutPortListBox.IsEnabled = true;
+                this.midiOutPortListBox.Items.Add(deviceInfo.Name);                
             }
+            
+            this.midiOutPortListBox.IsEnabled = true;
         }
         // </SnippetEnumerateMidiOutputDevices>
 
